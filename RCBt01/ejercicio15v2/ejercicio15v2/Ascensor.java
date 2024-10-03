@@ -27,13 +27,12 @@ public class Ascensor implements Domotica {
     }
     @Override
     public void reset() {
-        
+        planta = INIT;
         
     }
     @Override
     public String verEstado() {
-        // TODO Auto-generated method stub
-        return null;
+        return "La planta actual es "+ planta + " piso.";
     }
 
     

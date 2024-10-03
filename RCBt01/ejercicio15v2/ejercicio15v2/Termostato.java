@@ -8,6 +8,10 @@ public class Termostato implements Domotica{
     public int temperatura;
     public LocalDate revision;
 
+    public Termostato(){
+        this.temperatura=valorInicial;
+    }
+
     @Override
     public Boolean Subir() {
         if(temperatura<valorMaximo){
