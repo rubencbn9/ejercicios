@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premios</title>
+    <style>
+         h1{
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+   
+</head>
+<body>
+    <h1><a th:href="@{/}">VIKINGS</a></h1>
+    <h2>PREMIOS</h2>
+    <p>Vikings no sólo se trata de una gran producción que destaca por la epicidad de sus historias, de sus personajes o de sus conquistas, sino que todo lo que rodea al guión la hace aún más increíble. Consigue que te sientas como si formaras parte de la historia durante más de 40 minutos todas las semanas.</p>
+
+       <p>El diseño de producción. Todo en Vikings llama la atención y deleita la mirada. La reconstrucción de época, el vestuario, el diseño de los estandartes: una estética que acompaña a un relato sólido y que se suma al desarrollo de sus potentes personajes. El creador y showrunner Michael Hirst, responsable de dramas históricos como Los Tudor o Elizabeth, combinó diversas leyendas nórdicas para lograr un relato que sea atractivo desde su dinámica aventurera, pero que mantenga una fidelidad con el género épico. También, generó en la producción una cantidad de detalles significativos para acercarla lo más posible al realismo histórico y a los símbolos vikingos.</p> 
+        
+        <p>La composición de la imagen. La construcción del cuadro cinematográfico en la serie es otro de sus puntos fuertes. La cámara  se introduce en este mundo desde una perspectiva casi documental, con pulso nervioso, sobre el punto de vista en acción de los protagonistas. Su imagen privilegia los colores fríos y hay excelentes cuadros que aprovechan las locaciones al máximo.</p>
+        
+        <p>Esas grandiosas escenas.Vikings se construye, como todo relato épico, alrededor de momentos clave que involucran batallas decisivas en la historia. En la temporada tres, el octavo episodio, “To the Gates!”, narra el ataque a París que los recibe fortificado. Los puntos de vista del ataque, el seguimiento de la acción desde la mirada de los protagonistas, es un ejemplo de puesta en escena en función narrativa. Otra secuencia soberbia es la del último episodio emitido, el décimo de la cuarta temporada, “The Last Ship”. Otra vez el eje es el ataque a París pero, en este caso, por agua. Ese combate es de lo mejor que se ha visto en televisión. Además, es el clímax del enfrentamiento entre Lothbrok y su hermano traidor, Rollo.</p>
+        
+        <p>Por ello se ha llevado merecidos varios premios y nominaciones a lo largo de sus cuatro años de existencia.</p>
+        
+        <h3>Ganados:</h3>
+
+        <ul>
+            <li th:each="premio : ${premiosGanados}">
+                <span th:text="${premio}"> *</span>
+            </li>
+        </ul>
+<!-- <ul>
+    <li><strong>Canadian Screen Award al mejor Drama Internacional</strong>: 2015 y 2016</li>
+    <li><strong>Canadian Screen Award por los mejores Efectos Visuales</strong>: 2014, 2015 y 2016</li>
+    <li><strong>Canadian Screen Award al Mejor Sonido en un programa o serie dramática</strong>: 2015</li>
+</ul> -->
+
+<h3>Nominaciones:</h3>
+<ul>
+    <li th:each="nominados:${premiosNominados}">
+        <span th:text="${nominados}"></span>
+    </li>
+</ul>
+<!-- <ul>
+    <li><strong>Premio Primetime Emmy al Mejor Diseño de Títulos de Entrada</strong>: 2013</li>
+    <li><strong>Premio Primetime Emmy a los Mejores Efectos Visuales y Especiales</strong>: 2015, 2016</li>
+    <li><strong>Premio de la Crítica Televisiva a la Mejor Actriz de Reparto en Serie Dramática</strong>: 2015</li>
+    <li><strong>Premio Primetime Emmy a los Mejores Efectos Visuales y Especiales de Apoyo</strong>: 2014, 2013</li>
+    <li><strong>Premio Primetime Emmy a la Mejor Edición de Sonido en una Serie</strong>: 2013, 2016</li>
+    <li><strong>Premio de la Crítica Televisiva al Show Más Adictivo</strong>: 2015</li>
+    <li><strong>Canadian Screen Awards: Premio Shaw Media a la Mejor Actuación Femenina en un Rol Dramático Continuo</strong>: 2014</li>
+    <li><strong>Premio de la Sociedad Americana de Cinematógrafos al Mejor Logro en Fotografía en una Serie Regular</strong>: 2015</li>
+    <li><strong>Premio Primetime Emmy al Mejor Maquillaje para Serie Monocámara (No Prostético)</strong>: 2016</li>
+    <li><strong>Canadian Screen Awards for Best Sound in a Comedy or Dramatic Program or Series</strong>: 2016</li>
+    <li><strong>Canadian Screen Award al Mejor Montaje en un Programa o Serie Dramática</strong>: 2014, 2016</li>
+    <li><strong>Canadian Screen Award a la Mejor Fotografía en un Programa o Serie Dramática</strong>: 2014</li>
+    <li><strong>Canadian Screen Award a la Mejor Dirección en una Serie Dramática</strong>: 2014, 2015, 2016</li>
+</ul> -->
+
+<footer>
+    <h4>fuente:  <a href="https://vikingsserieblog.wordpress.com/2017/01/13/titulo-de-la-entrada-de-blog/" target="_blank">VikingsBlog</a></h4>
+   
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.focus {
+    background-color: yellow;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+table td {
+    border: 1px solid #ddd;
+    width: 5em;
+    text-align: center;
+}

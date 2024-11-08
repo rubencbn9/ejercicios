@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Listado de numeros aleatorios</h1>
+    <table border="1px">
+        <thead><th>Numero</th><th>Operacion</th></thead>
+        <tbody>
+            <tr th:each="numero: ${listaNumeros}">
+                <td th:text="${numero}"  th:class="${numero > 50} ? 'mayor' : 'menor'"> 
+                </td>
+                <td>
+                    <a th:href="@{/delete/{id}(id=${numero})}">delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    Total números: <span th:text="${cantidadTotal}"></span><br/>
+    <a th:href="@{/new}">Nuevo número</a><br/>
+</body>
+</html>
