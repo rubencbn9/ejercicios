@@ -44,10 +44,5 @@ public List<Integer> Divisores(int numero1) {
     return lista;
 }
 
-public class PruebaServicio {
-    public static void main(String[] args) {
-        servicio s = new servicio();
-        System.out.println(s.Divisores(20));
-    }
-}
+
 }
