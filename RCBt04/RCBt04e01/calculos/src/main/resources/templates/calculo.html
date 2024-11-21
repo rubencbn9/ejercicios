@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title>
+</head>
+<body>
+    <h1>Calculo de valores</h1><br>
+    <h2 th:if="${primo}">Calculo primo</h2>
+    <p th:if="${primo}">El numero indicado es primo</p>
+    <p th:if="${!primo}">El numero indicado no es primo</p>
+
+    <h2 th:if="${hipotenusa}">Calculo de Hipotenusa</h2>
+    <p th:text="${hipotenusa}"></p>
+
+    <h2 th:if="${Divisores}">Lista de divisores</h2>
+<ul th:if="${Divisores}" th:each="numero : ${Divisores}">
+    <li th:text="${numero}"></li>
+</ul>
+<p th:if="${error}" th:text="${error}"></p>
+</body>
+<footer>
+    <a th:href="@{/}">home</a>
+</footer>
+</html>

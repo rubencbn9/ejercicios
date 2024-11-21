@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cálculos</h1>
+    <a th:href="@{/calculos/primo?numero=7}"> calculo </a><br/>
+    <a th:href="@{/calculos/primo?numero=8}"> Calculos - primo 8 </a><br/>
+    <a th:href="@{/calculos/primo}"> Calculos - error (sin numero)</a><br/>
+    <a th:href="@{/calculos/hipotenusa/3/5}"> Calculos - hipotenusa 3/5 </a><br/>
+    <a th:href="@{/calculos/hipotenusa/-3/5}"> Calculos - hipotenusa -3/5 </a><br/>
+    <a th:href="@{/calculos/divisores/20}"> Calculos - divisores 20 </a><br/>
+ </body>
+</html>

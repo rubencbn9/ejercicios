@@ -1,0 +1,4 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "dotnet.defaultSolution": "ConsoleApp2.sln"
+}

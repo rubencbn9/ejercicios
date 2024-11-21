@@ -20,7 +20,7 @@ public class controladores {
    }
    
    @GetMapping("/voto")
-   public String añadir(@RequestParam("foto")int foto, Model model) {
+   public String añadir(@RequestParam int foto, Model model) {
         if(foto>=0 && foto< votos.length){
             votos[foto]++;
         }
